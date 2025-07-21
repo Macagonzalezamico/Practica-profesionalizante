@@ -42,7 +42,7 @@ Modelo: Regresión sobre series temporales (si simulamos varios meses/años)
 ### DESARROLLO
 🔹 2. Modelo Predictivo
 
-Vamos a construir un modelo predictivo de clasificación que intente predecir si un alumno finalizará el curso o no, basándonos en sus características.
+Voy a construir un modelo predictivo de clasificación que intente predecir si un alumno finalizará el curso o no, basándome en sus características.
 
 🔍 Objetivo del Modelo
 
@@ -67,4 +67,4 @@ medio_publicidad
 
 ⚙️ Modelo Sugerido
 
-Vamos a usar un Árbol de Decisión (DecisionTreeClassifier) por ser fácil de interpretar y adecuado para datos categóricos mezclados con numéricos.
+Voy a usar un Árbol de Decisión (DecisionTreeClassifier) por ser fácil de interpretar y adecuado para datos categóricos mezclados con numéricos.
