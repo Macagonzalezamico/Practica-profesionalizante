@@ -5,7 +5,10 @@ Proyecto sobre una empresa del sector educativo. Voy a simular una academia o in
 2) Predecir cuántas inscripciones tendrá en el futuro.
 3) Optimizar el proceso educativo y comercial (ej.: mejorar tasas de inscripción, reducir abandonos, etc.)
 
-🧠 Proyecto: Análisis y Optimización de..........
+🧠 Proyecto: 
+"Optimización de Procesos Educativos a través del Análisis Predictivo de Datos de Inscripción"
+
+"Proyecto de Ciencia de Datos para la Optimización de Cursos en una Plataforma Educativa"
 
 Este proyecto incluirá:
 
