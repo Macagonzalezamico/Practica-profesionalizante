@@ -6,7 +6,8 @@ Proyecto sobre una empresa del sector educativo. Voy a simular una academia o in
 3) Optimizar el proceso educativo y comercial (ej.: mejorar tasas de inscripción, reducir abandonos, etc.)
 
 
-🔧 Etapas del Proyecto
+## 🔧 Etapas del Proyecto
+
 🔹 1. Análisis Exploratorio de Datos (EDA)
 ¿Cuáles son los cursos más elegidos?
 
