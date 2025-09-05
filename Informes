@@ -1,0 +1,57 @@
+📊 Informe de Análisis Exploratorio de Datos (EDA)
+1. Distribución de inscripciones por curso
+
+Hallazgo: Los cursos con mayor cantidad de inscripciones son Python Básico y Data Science, lo que indica un alto interés en áreas tecnológicas.
+
+Cursos con menor demanda: Marketing Digital y Diseño UX/UI.
+
+Conclusión: La academia debería reforzar la promoción de cursos de menor rotación o ampliar la oferta en los cursos más demandados.
+
+2. Tasa de finalización por curso
+
+Hallazgo: Excel Avanzado y Python Básico presentan las mayores tasas de finalización.
+
+Cursos con más abandono: Marketing Digital e Inglés Intermedio.
+
+Conclusión: Es recomendable revisar contenidos y metodologías en los cursos con mayor tasa de abandono.
+
+3. Perfil de edad por modalidad
+
+Hallazgo:
+
+Virtual → predominan estudiantes jóvenes (20–30 años).
+
+Presencial → mayor diversidad, con tendencia hacia estudiantes de más edad (30–45 años).
+
+Conclusión: Ofrecer modalidades mixtas puede ampliar el rango de edad atendido y mejorar la experiencia de aprendizaje.
+
+4. Canales de publicidad
+
+Hallazgo:
+
+Instagram y Google generan la mayor cantidad de inscripciones.
+
+Recomendación tiene menor volumen, pero los alumnos muestran una tasa de finalización más alta.
+
+Conclusión: Mantener inversión en redes sociales para volumen, pero potenciar campañas de referidos para mejorar calidad de inscripciones.
+
+5. Evolución temporal de inscripciones
+
+Hallazgo: Se observa un crecimiento progresivo de inscripciones en 2023 y 2024, con picos en los meses de marzo y agosto (posibles inicios de ciclos académicos).
+
+Conclusión: Planificar campañas publicitarias antes de esos meses podría maximizar la captación de alumnos.
+
+6. Correlaciones entre variables
+
+Hallazgo:
+
+Duración del curso no se relaciona fuertemente con finalización ni calificación.
+
+Edad muestra correlación positiva leve con finalización (los alumnos de más edad suelen terminar más).
+
+Precio no parece ser un factor determinante en abandono.
+
+Conclusión: La decisión de finalización depende más del curso y el canal de captación que de la duración o precio.
+
+✅ Síntesis General del EDA
+El análisis muestra que los cursos de tecnología son los más atractivos, los alumnos captados por recomendación son más comprometidos, y la modalidad presencial favorece la finalización en estudiantes de mayor edad. Esto permitirá ajustar la estrategia comercial y pedagógica.
