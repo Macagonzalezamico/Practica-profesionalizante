@@ -5,115 +5,100 @@ Proyecto sobre una empresa del sector educativo. Voy a simular una academia o in
 2) Predecir cuántas inscripciones tendrá en el futuro.
 3) Optimizar el proceso educativo y comercial (ej.: mejorar tasas de inscripción, reducir abandonos, etc.)
 
-🧠 Proyecto: 
-"Optimización de Procesos Educativos a través del Análisis Predictivo de Datos de Inscripción"
 
-"Proyecto de Ciencia de Datos para la Optimización de Cursos en una Plataforma Educativa"
+# 🎓 Análisis Exploratorio y Modelado Predictivo – Academia Educativa
 
-Este proyecto incluirá:
+Este proyecto desarrolla un **Análisis Exploratorio de Datos (EDA)** y **modelos predictivos supervisados** aplicados a un dataset institucional de una academia educativa.  
+Se busca comprender los factores que influyen en la finalización de los cursos, la efectividad de los canales de difusión y los perfiles de estudiantes con mayor riesgo de abandono.
 
-Análisis Exploratorio de Datos (EDA)
+---
 
-Modelos Predictivos
+## 📂 Archivos principales
 
-Optimización de Procesos
+| Archivo | Descripción |
+|----------|--------------|
+| `dataset_academia_educativa_var_coords.csv` | Dataset base del proyecto, con variables académicas, demográficas y geográficas. |
+| `PP.ipynb` | Notebook principal con el análisis EDA, KPIs, modelos predictivos y conclusiones. |
 
-✅ Paso 1: Definición del Alcance del Proyecto
+---
 
-📌 Nombre del Proyecto:
-“..............”
+## 🧩 Estructura del dataset
 
-🎯 Objetivos:
+El dataset combina información de inscripción y desempeño de alumnos en diferentes cursos de una academia.
 
-Objetivo	          Detalle
-EDA	                 Explorar los datos históricos de ventas para conocer                          patrones y tendencias
-Predicción	          Predecir las ventas del próximo mes (o trimestre)
-Optimización	         Detectar productos de baja rotación, demoras                                  logísticas o ineficiencias comerciales y proponer                              mejoras
+| Columna | Descripción |
+|----------|--------------|
+| `nombre_curso` | Nombre del curso o programa. |
+| `modalidad` | Modalidad de cursado (`Presencial`, `Virtual`). |
+| `genero` | Género declarado del estudiante. |
+| `region` | Provincia o región de procedencia. |
+| `medio_publicidad` | Canal por el cual se enteró del curso (Instagram, Facebook, Google, etc.). |
+| `edad` | Edad del estudiante. |
+| `fecha_inscripcion` | Fecha de inscripción en el curso. |
+| `precio` | Valor del curso en pesos argentinos. |
+| `duracion_semanas` | Duración total del curso. |
+| `calificacion_final` | Nota final obtenida (0 a 10). |
+| `finalizo` | Indicador binario (`Sí` / `No`) que señala si completó el curso. |
+| `Latitud`, `Longitud` | Coordenadas geográficas aproximadas para visualización geoespacial. |
 
-✅ Paso 2: Dataset (real o simulado)
+---
 
-📚 Educación (inscripciones, cursos)
+## 🔍 Etapas del análisis (EDA)
 
+La notebook desarrolla un **EDA completo**, incluyendo:
 
-✅ Paso 3: Herramientas que vamos a usar
-Python (pandas, matplotlib, seaborn, scikit-learn)
+1. **Inspección estructural del dataset**  
+   - Tipos de variables, valores faltantes, duplicados y outliers.
+2. **KPIs institucionales**  
+   - Tasa de finalización, promedio de calificaciones, curso más elegido, canal más efectivo, diferencias por modalidad.
+3. **Distribuciones y relaciones clave**  
+   - Análisis descriptivo de edad, modalidad, género, región y desempeño.
+4. **Preparación del dataset para modelado**  
+   - Encoding categórico, división train/test y balanceo de clases.
 
-Visual Studio Code 
-Power BI / Tableau
+---
 
-Informe final en Word o PDF
+## 🤖 Modelado predictivo
 
-✅ Paso 4: Entregables del Proyecto
+Se desarrollaron modelos de clasificación para predecir la **probabilidad de finalización** de los alumnos:
 
-Dataset limpio y procesado
+| Modelo | Descripción | Resultado (F1_macro) |
+|---------|--------------|----------------------|
+| **Regresión Logística** | Modelo lineal base, interpretable y robusto. | Medio |
+| **Random Forest** | Ensamble de árboles con manejo de no linealidades y alta precisión. | Alto |
+| **XGBoost** *(opcional)* | Variante optimizada con boosting. | Muy alto (si instalado) |
 
-Análisis Exploratorio de Datos
+Métricas evaluadas:
+- Accuracy
+- Balanced Accuracy
+- F1-score (macro)
+- Matriz de confusión
+- Clasification report
 
-Modelo Predictivo (regresión lineal o árbol de decisión)
+---
 
-Informe con propuestas de mejora en procesos
+## 💡 Resultados e interpretaciones
 
-Dashboard o visualización 
+- La **modalidad** y el **medio de publicidad** son variables altamente asociadas a la finalización.  
+- Se detectaron canales con **alto volumen pero baja conversión**, útiles para optimización de marketing.  
+- Los modelos permiten estimar un **riesgo de abandono**, priorizando acciones preventivas (contacto, tutorías).  
+- Se generó un **reporte ejecutivo automatizado** con KPIs, análisis por canal y recomendaciones de acción.
 
-## 🔧 Etapas del Proyecto
+---
 
-🔹 1. Análisis Exploratorio de Datos (EDA)
+## 🧭 Recomendaciones estratégicas
 
-¿Cuáles son los cursos más elegidos?
+1. Reforzar la inversión en los canales con **alta conversión y volumen** (Instagram, Google Ads).  
+2. Implementar tutorías y contacto proactivo en segmentos con **alto riesgo de abandono**.  
+3. Mantener un equilibrio entre cursos **virtuales y presenciales** según la demanda real.  
+4. Utilizar el modelo predictivo como herramienta de **alerta temprana** para gestión académica.
 
-¿Cuál es la tasa de finalización por curso?
+---
 
-¿Cuál es el promedio de edad por curso o modalidad?
+## ⚙️ Requisitos técnicos
 
-¿Cuál es el canal de publicidad más efectivo?
+Para ejecutar la notebook se requieren las siguientes librerías (Python 3.10+):
 
-🔹 2. Modelo Predictivo
+```bash
+pip install pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost y plotly.
 
-Predicción 1: ¿Se puede predecir si un alumno terminará el curso?
-
-Modelo: Clasificación (por ejemplo, Regresión Logística o Árbol de Decisión)
-
-Predicción 2: ¿Cuántos alumnos se inscribirán el mes siguiente?
-
-Modelo: Regresión sobre series temporales (si simulamos varios meses/años)
-
-🔹 3. Optimización de Procesos
-
-¿Conviene invertir más en cierto canal de publicidad?
-
-¿Hay cursos con alta deserción que podrían mejorarse?
-
-¿Qué modalidad funciona mejor en cada región?
-
-
-
-
-### DESARROLLO
-🔹 2. Modelo Predictivo
-
-Voy a construir un modelo predictivo de clasificación que intente predecir si un alumno finalizará el curso o no, basándome en sus características.
-
-🔍 Objetivo del Modelo
-
-Variable objetivo (y): finalizo (Sí / No)
-Variables predictoras (X):
-
-nombre_curso
-
-modalidad
-
-duracion_semanas
-
-precio
-
-edad
-
-genero
-
-region
-
-medio_publicidad
-
-⚙️ Modelo Sugerido
-
-Voy a usar un Árbol de Decisión (DecisionTreeClassifier) por ser fácil de interpretar y adecuado para datos categóricos mezclados con numéricos.
