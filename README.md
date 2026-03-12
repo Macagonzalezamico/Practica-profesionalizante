@@ -116,4 +116,4 @@ El dashboard permite:
 
 La visualización fue desarrollada utilizando **Tableau Public**.
 
-<img width="2034" height="1143" alt="Dashboard 2" src="https://github.com/user-attachments/assets/065ea941-d57a-4e04-87f7-cce0d387e34e" />
+
