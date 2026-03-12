@@ -102,3 +102,18 @@ Para ejecutar la notebook se requieren las siguientes librerías (Python 3.10+):
 ```bash
 pip install pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost y plotly.
 
+## 📊 Visualización del Proyecto
+
+Para complementar el análisis de datos, se desarrolló un dashboard interactivo en Tableau que permite explorar visualmente los principales resultados del proyecto.
+
+🔗 Ver dashboard interactivo:  
+https://public.tableau.com/views/PP_17635695435420/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+El dashboard permite:
+- Visualizar métricas clave del análisis.
+- Explorar patrones y tendencias en los datos.
+- Facilitar la interpretación de los resultados obtenidos en el proyecto.
+
+La visualización fue desarrollada utilizando **Tableau Public**.
+
+<img width="2034" height="1143" alt="Dashboard 2" src="https://github.com/user-attachments/assets/065ea941-d57a-4e04-87f7-cce0d387e34e" />
